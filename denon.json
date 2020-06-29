@@ -1,0 +1,20 @@
+{
+  "$schema": "https://deno.land/x/denon/schema.json",
+  "scripts": {
+    "start": {
+      "cmd": "deno run server.ts",
+      "allow": [
+        "env",
+        "net",
+        "write",
+        "read",
+        "plugin"
+      ],
+      "unstable": true,
+      "env": {
+        "PORT": "5001",
+        "DB_URI": "MONGODB_URL"
+      }
+    }
+  }
+}
