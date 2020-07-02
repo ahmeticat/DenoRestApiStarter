@@ -1,7 +1,5 @@
 import { Application } from "https://deno.land/x/oak/mod.ts";
-import router from './router.ts';
 import { DenoRouter } from "./routes/deno.routes.ts";
-import { DenoControllers } from "./routes/routes.settings.ts";
 import { ExtendUserController } from "./controllers/extendUserController.ts";
 import { userCollection, bookCollection } from "./db/_db.ts";
 import { UserSchema } from "./schemas/user.schema.ts";
@@ -37,7 +35,6 @@ let denoRouter = new DenoRouter(
             name: '',
             path: '/api/v1/books'
         }
-
     ]
 );
 

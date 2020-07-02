@@ -1,7 +1,7 @@
 import { UserSchema } from "../../schemas/user.schema.ts";
 
 export class UserOut {
-  _id: any;
+  id: any;
   nameSurname: string;
   email: string;
   password: string;
@@ -9,7 +9,7 @@ export class UserOut {
   isActive: boolean;
 
   constructor(model: UserSchema) {
-    this._id = (model as any)._id;
+    this.id = (model as any)._id.$oid;
     this.nameSurname = model.nameSurname;
     this.email = model.username;
     this.password = model.password;
