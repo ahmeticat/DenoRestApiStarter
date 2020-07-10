@@ -4,11 +4,13 @@ import { BaseSchema } from "./base.schema.ts";
 export class BookSchema extends BaseSchema {
   name: string;
   author: string;
+  authorId: number;
   price: number;
   constructor(model: any) {
     super();
     this.name = model.name;
     this.author = model.author;
     this.price = model.price;
+    this.authorId = model.authorId;
   }
 }

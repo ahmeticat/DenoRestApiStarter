@@ -7,5 +7,6 @@ const db = client.database("demo");
 
 const userCollection = db.collection("users");
 const bookCollection = db.collection("books");
+const authorCollection = db.collection("authors");
 
-export { userCollection, bookCollection };
+export { userCollection, bookCollection, authorCollection };

@@ -6,6 +6,7 @@ const BookInputSchema = Schema({
   name: string,
   author: string,
   price: number.optional(),
+  authorId: number
 });
 
 export { BookInputSchema };

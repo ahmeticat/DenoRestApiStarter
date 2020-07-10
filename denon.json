@@ -13,7 +13,7 @@
       "unstable": true,
       "env": {
         "PORT": "5001",
-        "DB_URI": ""
+        "DB_URI": "mongodb+srv://admin:HvU0buH5zk6HJ4F2@cluster0-minbz.mongodb.net/demo?retryWrites=true&w=majority"
       }
     }
   }
